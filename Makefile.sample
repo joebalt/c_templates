@@ -1,0 +1,15 @@
+include path/to/Makefile.inc
+
+GEN_EXE = [.c file(s) names go here - space separated]
+
+EXE = ${GEN_EXE}
+
+all : ${EXE}
+
+allgen : ${GEN_EXE}
+
+clean :
+       	${RM} ${EXE} *.o
+
+showall :
+       	@ echo ${EXE}
